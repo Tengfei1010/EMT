@@ -1,1 +1,1 @@
-### Elementary mathematical Theorem
+### Elementary Mathematical Theorem
