@@ -8,8 +8,8 @@
 
 
 int st_3(int a, int b) {
-    if (a != 0) {
-        if ((a + b) % (2*b + a - b) != 0) {
+    if (a > 0) {
+        if ((a + b) % (2 * b + a - b) != 0) {
             klee_assert(0);
         }
     }

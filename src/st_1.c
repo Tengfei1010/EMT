@@ -7,11 +7,10 @@
 // #include <stdio.h>
 
 int st_1(int a, int b, int c) {
-
-    if (b != 0 && c != 0) {
-        if ((a % b == 0) && (a % c == 0)) {
-            if (c < (INT_MAX - b)) {
-                if (a % (b + c) != 0) {
+    if (a > 0 && b > 0 && c > 0) {
+        if ((b % a == 0) && (c % a == 0)) {
+            if (c < (INT_MAX - b) && (b + c) != 0) {
+                if ((b + c) % a != 0) {
                     klee_assert(0);
                 }
             }

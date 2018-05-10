@@ -50,6 +50,6 @@ int main() {
     int a, n;
     klee_make_symbolic(&a, sizeof(a), "a");
     klee_make_symbolic(&n, sizeof(n), "n");
-    fm_ol(a, n);
+    fm_st(a, n);
     return 0;
 }

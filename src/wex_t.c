@@ -7,7 +7,7 @@
 #include <klee/klee.h>
 // #include <stdio.h>
 
-// 越界检测
+
 int umul_ok(int x, int y) {
     int p = x * y;
     return !x || p / x == y;
@@ -17,8 +17,7 @@ int umul_ok(int x, int y) {
 int is_prime(int a) {
     if (a > 1) {
         for (int i = 2; i <= a / 2; ++i) {
-            // condition for nonprime number
-            if (n % i == 0) {
+            if (a % i == 0) {
                 return 0;
             }
         }
@@ -52,7 +51,7 @@ int factorial_ok(int n) {
 }
 
 int wex_t(int p) {
-    if (p > 0 && is_prime(p)) {
+    if (is_prime(p)) {
         if (factorial_ok(p)) {
             if (factorial(p) % p != -1) {
                 klee_assert(0);

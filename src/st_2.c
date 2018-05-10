@@ -14,10 +14,12 @@ int umul_ok(int x, int y) {
 }
 
 int st_2(int a, int b, int c) {
-    if (b != 0 && c != 0) {
-        if (umul_ok(b, c)) {
-            if (a % (b * c) != 0) {
-                klee_assert(0);
+    if (a > 0 && b > 0 && c > 0) {
+        if (b % a == 0 && c % a == 0) {
+            if (umul_ok(b, c)) {
+                if ((b * c) % a != 0) {
+                    klee_assert(0);
+                }
             }
         }
     }

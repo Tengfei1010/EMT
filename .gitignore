@@ -1,2 +1,12 @@
 
 .idea/*
+
+./test/*
+
+./klee*
+
+./klee-last/**
+
+./klee-out**/*
+
+./test**/*
