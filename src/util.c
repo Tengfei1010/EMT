@@ -2,12 +2,23 @@
 // Created by tzt77 on 5/9/18.
 //
 
-// 越界检测
+#include <limits.h>
+
+// 越界检测 *
 int umul_ok(int x, int y) {
     int p = x * y;
     return !x || p / x == y;
 
 }
+
+// 越界检测 +
+int add_ok(int a, int b) {
+    if (a < (INT_MAX - b)) {
+        return 1;
+    }
+    return 0;
+}
+
 
 // 互质判断
 int gcd_one(int a, int b) {
@@ -46,7 +57,7 @@ int is_prime(int a) {
     if (a > 1) {
         for (int i = 2; i <= a / 2; ++i) {
             // condition for nonprime number
-            if (n % i == 0) {
+            if (a % i == 0) {
                 return 0;
             }
         }
