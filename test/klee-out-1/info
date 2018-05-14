@@ -1,3 +1,0 @@
-/home/kevin/Klee/klee/build/bin/klee -solver-backend=z3 /home/kevin/Develop/EMT/test/dycf_t.c.bc
-PID: 10562
-Started: 2018-05-10 15:55:54

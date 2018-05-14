@@ -1,7 +1,0 @@
-Error: ASSERTION FAIL: 0
-File: /home/kevin/Develop/EMT/src/fmsts_t.c
-Line: 53
-assembly.ll line: 225
-Stack: 
-	#000000225 in fmsts_t (x, y) at /home/kevin/Develop/EMT/src/fmsts_t.c:53
-	#100000248 in main () at /home/kevin/Develop/EMT/src/fmsts_t.c:64

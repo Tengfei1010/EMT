@@ -1,3 +1,0 @@
-/home/kevin/Klee/klee/build/bin/klee -solver-backend=z3 /home/kevin/Develop/EMT/test/kmes_t.c.bc
-PID: 3762
-Started: 2018-05-11 17:17:00

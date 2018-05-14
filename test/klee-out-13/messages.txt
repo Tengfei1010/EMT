@@ -1,3 +1,0 @@
-KLEE: Using Z3 solver backend
-KLEE: ERROR: /home/kevin/Develop/EMT/src/fmrt_t.c:42: ASSERTION FAIL: 0
-KLEE: NOTE: now ignoring this error at this location

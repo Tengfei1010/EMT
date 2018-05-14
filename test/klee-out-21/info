@@ -1,3 +1,0 @@
-/home/kevin/Klee/klee/build/bin/klee -solver-backend=z3 /home/kevin/Develop/EMT/test/kytoqf_t_2.c.bc
-PID: 9489
-Started: 2018-05-14 16:31:35

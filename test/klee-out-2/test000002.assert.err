@@ -1,7 +1,0 @@
-Error: ASSERTION FAIL: 0
-File: /home/kevin/Develop/EMT/src/sh_t.c
-Line: 92
-assembly.ll line: 448
-Stack: 
-	#000000448 in sh_t (n) at /home/kevin/Develop/EMT/src/sh_t.c:92
-	#100000480 in main () at /home/kevin/Develop/EMT/src/sh_t.c:104

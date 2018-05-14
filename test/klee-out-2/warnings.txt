@@ -1,2 +1,0 @@
-KLEE: WARNING: undefined reference to function: rand
-KLEE: WARNING ONCE: calling external: rand() at /home/kevin/Develop/EMT/src/sh_t.c:67

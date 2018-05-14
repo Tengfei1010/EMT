@@ -1,4 +1,0 @@
-KLEE: Using Z3 solver backend
-KLEE: ERROR: /home/kevin/Develop/EMT/src/fmsts_t.c:52: ASSERTION FAIL: 0
-KLEE: NOTE: now ignoring this error at this location
-KLEE: halting execution, dumping remaining states

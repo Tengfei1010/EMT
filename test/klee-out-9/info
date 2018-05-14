@@ -1,3 +1,0 @@
-/home/kevin/Klee/klee/build/bin/klee -solver-backend=stp /home/kevin/Develop/EMT/test/fm_ol.c.bc
-PID: 4209
-Started: 2018-05-14 10:50:21

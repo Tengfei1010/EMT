@@ -1,7 +1,0 @@
-Error: ASSERTION FAIL: 0
-File: /home/kevin/Develop/EMT/src/fmrt_t.c
-Line: 42
-assembly.ll line: 186
-Stack: 
-	#000000186 in fmrt_t (x, y, z) at /home/kevin/Develop/EMT/src/fmrt_t.c:42
-	#100000212 in main () at /home/kevin/Develop/EMT/src/fmrt_t.c:54
