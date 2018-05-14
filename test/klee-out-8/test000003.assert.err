@@ -1,0 +1,7 @@
+Error: ASSERTION FAIL: 0
+File: /home/kevin/Develop/EMT/src/fm_ol.c
+Line: 51
+assembly.ll line: 209
+Stack: 
+	#000000209 in fm_ol (a, n) at /home/kevin/Develop/EMT/src/fm_ol.c:51
+	#100000231 in main () at /home/kevin/Develop/EMT/src/fm_ol.c:62

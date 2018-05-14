@@ -1,0 +1,3 @@
+/home/kevin/Klee/klee/build/bin/klee -solver-backend=z3 /home/kevin/Develop/EMT/test/cr_t.c.bc
+PID: 4045
+Started: 2018-05-11 17:32:45

@@ -11,11 +11,11 @@ then the integer a and b are modulo m congruent, denoted as a ≡ b ( Mod m).
 The modulo m congruence is an equivalence relation of integers.
 */
 
-int get_sign(int a, int b) {
+int get_sign(int a, int b, int m) {
    
-  if (a > 0 && b > 0) {
-    if ((a - b) % 12 == 0) {
-    if ((a % 12) != (b % 12))
+  if (a > 0 && b > 0 && m > 0) {
+    if ((a - b) % m == 0) {
+    if ((a % m) != (b % m))
        klee_assert(0);
      return 0;
     }
@@ -25,9 +25,10 @@ int get_sign(int a, int b) {
 }
 
 int main() {
-  int a, b;
+  int a, b, m;
   klee_make_symbolic(&a, sizeof(a), "a");
   klee_make_symbolic(&b, sizeof(b), "b");
-  get_sign(a, b);
+  klee_make_symbolic(&m, sizeof(m), "m");
+  get_sign(a, b, m);
   return 0;
 }

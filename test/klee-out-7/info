@@ -1,0 +1,21 @@
+/home/kevin/Klee/klee/build/bin/klee -solver-backend=stp /home/kevin/Develop/EMT/test/ct.c.bc
+PID: 3577
+Started: 2018-05-14 10:37:22
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2018-05-14 10:41:19
+Elapsed: 00:03:57
+KLEE: done: explored paths = 3
+KLEE: done: avg. constructs per query = 38
+KLEE: done: total queries = 5
+KLEE: done: valid queries = 1
+KLEE: done: invalid queries = 4
+KLEE: done: query cex = 5
+
+KLEE: done: total instructions = 64
+KLEE: done: completed paths = 3
+KLEE: done: generated tests = 3

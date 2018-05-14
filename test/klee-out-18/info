@@ -1,0 +1,21 @@
+/home/kevin/Klee/klee/build/bin/klee -solver-backend=z3 /home/kevin/Develop/EMT/test/fmsts_t.c.bc
+PID: 8887
+Started: 2018-05-14 15:53:35
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2018-05-14 15:53:52
+Elapsed: 00:00:17
+KLEE: done: explored paths = 21
+KLEE: done: avg. constructs per query = 35
+KLEE: done: total queries = 43
+KLEE: done: valid queries = 23
+KLEE: done: invalid queries = 20
+KLEE: done: query cex = 43
+
+KLEE: done: total instructions = 787
+KLEE: done: completed paths = 21
+KLEE: done: generated tests = 21
