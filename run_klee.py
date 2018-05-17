@@ -4,9 +4,13 @@
 from __future__ import print_function
 
 import argparse
-import ConfigParser
 import io
 import os
+import sys
+if sys.version_info >= (3, 0):
+    import configparser
+else:
+    import ConfigParser
 
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
