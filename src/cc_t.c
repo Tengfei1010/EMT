@@ -10,6 +10,19 @@ int umul_ok(int x, int y) {
 
 }
 
+// a ^ n is ok
+int umul_ok_n(int a, int n) {
+    int s = a;
+    for (int i = 1; i < n; i++) {
+        if (umul_ok(s, a)) {
+            s *= a;
+        } else {
+            return 0;
+        }
+    }
+    return 1;
+}
+
 // a^n
 int pow(int a, int n) {
     int s = 1;
@@ -22,7 +35,7 @@ int pow(int a, int n) {
 int cc_t(int x, int y, int a, int b) {
     if (x > 3 || y > 2 ) {
         if (a > 1 && b > 1) {
-            if (umul_ok(x, pow(x, a-1)) && umul_ok(y , pow(y, b -1))) {
+            if (umul_ok_n(x, a) && umul_ok_n(y , b)) {
                 if (pow(x, a) - pow(y, b) == 1) {
                     klee_assert(0);
                 }

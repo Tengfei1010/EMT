@@ -35,7 +35,6 @@ int factorial(int n) {
         s *= i;
     }
     return s;
-
 }
 
 int factorial_ok(int n) {
@@ -45,6 +44,7 @@ int factorial_ok(int n) {
         if (!umul_ok(s, i)) {
             return 0;
         }
+        s *= i;
     }
 
     return 1;
@@ -53,8 +53,11 @@ int factorial_ok(int n) {
 int wex_t(int p) {
     if (is_prime(p)) {
         if (factorial_ok(p)) {
-            if (factorial(p) % p != -1) {
-                klee_assert(0);
+            if (factorial(p) % p > 0) {
+                int ys = factorial(p) % p;
+                if (ys - p != -1) {
+                    klee_assert(0);
+                }
             }
         }
     }
